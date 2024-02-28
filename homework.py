@@ -8,9 +8,12 @@ def subtract(x, y):
     return x - y
 
 
-def multiplication(x, y):
-    return x * y
-
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Error: Division by zero"
+    
 
 if __name__ == "__main__":
     print("Simple CLI Calculator")
@@ -23,8 +26,8 @@ if __name__ == "__main__":
 
     sum_result = add(num1, num2)
     difference_result = subtract(num1, num2)
-    multiplication_result = multiplication(num1, num2)
+    divide_result = divide(num1, num2)
 
     print(f"Addition Result: {num1} + {num2} = {sum_result}")
     print(f"Subtraction Result: {num1} - {num2} = {difference_result}")
-    print(f"Multiplication Result: {num1} * {num2} = {multiplication_result}")
+    print(f"Division Result: {num1} * {num2} = {divide_result}")
